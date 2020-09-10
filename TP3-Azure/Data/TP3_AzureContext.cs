@@ -16,7 +16,10 @@ namespace TP3_Azure.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=tcp:lucassamel-db-2020.database.windows.net,1433;Initial Catalog=lucassamel-db-2020;Persist Security Info=False;User ID=lucassamel;Password={your_password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+            optionsBuilder.UseSqlServer("Server=tcp:lucassamel-db-2020.database.windows.net,1433;" +
+                "Initial Catalog=lucassamel-db-2020;Persist Security Info=False;User ID=lucassamel;" +
+                "Password=C@dead0Sam3l;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;" +
+                "Connection Timeout=30;");
         }
 
         public DbSet<Amigos> Amigos { get; set; }
