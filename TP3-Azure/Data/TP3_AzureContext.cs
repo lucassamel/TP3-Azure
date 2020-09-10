@@ -16,6 +16,7 @@ namespace TP3_Azure.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+            //Alterar a senha para acessar o banco
             optionsBuilder.UseSqlServer("Server=tcp:lucassamel-db-2020.database.windows.net,1433;" +
                 "Initial Catalog=lucassamel-db-2020;Persist Security Info=False;User ID=lucassamel;" +
                 "Password={Password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;" +
