@@ -7,7 +7,7 @@
 <h1>Index</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="AddReservation">Create New</a>
 </p>
 <table class="table">
     <thead>
@@ -55,9 +55,9 @@
                 @Html.DisplayFor(modelItem => item.Telefone)
             </td>
             <td>
-                @Html.ActionLink("Edit", "UpdateReservation", new {  id=item.PrimaryKey  }) |
-                @Html.ActionLink("Details", "GetAmigos", new {  id=item.PrimaryKey  }) |
-                @Html.ActionLink("Delete", "Delete", new {  id=item.PrimaryKey  })
+                @Html.ActionLink("Edit", "UpdateReservation", new {  id=item.Id}) |
+                @Html.ActionLink("Details", "GetAmigos", new {  id=item.Id  }) |
+                @Html.ActionLink("Delete", "DeleteReservation", new {  id=item.Id  })
             </td>
         </tr>
 }

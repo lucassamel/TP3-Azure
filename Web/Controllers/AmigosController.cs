@@ -63,7 +63,7 @@ namespace Web.Controllers
                     receivedReservation = JsonConvert.DeserializeObject<Amigos>(apiResponse);
                 }
             }
-            return View(receivedReservation);
+            return RedirectToAction("Index");
         }
 
 
